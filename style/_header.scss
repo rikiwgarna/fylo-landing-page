@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8.75rem;
+
+  @include breakpoint-up(medium) {
+    margin-bottom: 3rem;
+  }
+  .logo {
+    width: 22%;
+
+    @include breakpoint-up(medium) {
+      width: 10%;
+    }
+  }
+
+  .navigation-header {
+    width: 60%;
+
+    @include breakpoint-up(medium) {
+      width: 20%;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    .navigation-item {
+      .navigation-link {
+        font-size: 14px;
+        font-weight: 400;
+        color: $veryDarkBlue;
+
+        &:hover {
+          color: $lightGray;
+          transition: color 100ms linear;
+        }
+      }
+    }
+  }
+}

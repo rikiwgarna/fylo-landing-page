@@ -1,0 +1,103 @@
+.cta {
+  background-color: $desaturatedBlue;
+  color: $lightGrayishBlue;
+
+  .container {
+    @include breakpoint-up(medium) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      text-align: left;
+    }
+  }
+
+  .cta-title {
+    font-size: 1.1rem;
+    margin-bottom: 2.1rem;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+  }
+
+  .cta-text {
+    font-size: 0.85rem;
+    padding: 0 1.65em;
+    margin-bottom: 1.5rem;
+
+    @include breakpoint-up(medium) {
+      padding: 0;
+      padding-right: 14em;
+      margin-bottom: 0;
+    }
+  }
+
+  .cta-form {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  .email-input-cta,
+  .btn-cta {
+    width: 70%;
+    border-radius: 2px;
+    border: 1px solid transparent;
+
+    @include breakpoint-up(medium) {
+      width: 100%;
+    }
+  }
+
+  .email-input-cta {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .notification {
+    display: block;
+    padding-left: 3rem;
+    margin-bottom: 0.6rem;
+    text-align: left;
+    font-style: italic;
+    color: #ff0033;
+    visibility: hidden;
+
+    @include breakpoint-up(medium) {
+      padding-left: 0rem;
+    }
+  }
+
+  .btn-cta {
+    cursor: pointer;
+    background-color: $brightBlue;
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
+    color: $lightGrayishBlue;
+    font-size: 0.6rem;
+
+    @include breakpoint-up(medium) {
+      width: 50%;
+    }
+  }
+
+  .error {
+    .email-input-cta {
+      border: 1px solid #ff0033;
+    }
+
+    .notification {
+      color: #ff0033;
+      font-style: italic;
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.team {
+  position: relative;
+  background-color: $lightGrayishBlue;
+  padding-top: 2rem;
+  text-align: left;
+
+  &::before {
+    content: '';
+    background: url('../images/bg-curve-mobile.svg') no-repeat;
+    position: absolute;
+    top: -53px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    @include breakpoint-up(medium) {
+      background: url('../images/bg-curve-desktop.svg') no-repeat;
+      top: -113px;
+    }
+  }
+
+  .container {
+    @include breakpoint-up(medium) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  .team-image {
+    margin-bottom: 8.44rem;
+
+    @include breakpoint-up(medium) {
+      order: 2;
+    }
+  }
+
+  .team-article {
+    @include breakpoint-up(medium) {
+      order: 1;
+    }
+  }
+
+  .team-title {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @include breakpoint-up(medium) {
+      text-align: left;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+  }
+
+  .team-text {
+    font-size: 0.85rem;
+    color: $desaturatedBlue;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint-up(medium) {
+      max-width: 75%;
+    }
+  }
+
+  .link-btn {
+    position: relative;
+    font-size: 0.8rem;
+    padding: 0.5em 0;
+    margin: 0 auto;
+    margin-bottom: 3.56rem;
+    border-bottom: 2px solid $moderateCyan;
+    width: 43%;
+    color: $moderateCyan;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+      width: 23%;
+      margin: 0;
+      margin-bottom: 3.56rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity 100ms linear;
+    }
+  }
+
+  i {
+    background-color: $moderateCyan;
+    color: white;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius: 50%;
+    font-size: 6px;
+  }
+
+  .testimonial {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    background-color: white;
+    margin: 0 1rem;
+    padding-top: 1.5rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      left: 9%;
+      width: 100%;
+      height: 12px;
+      background: url('../images/icon-quotes.svg') no-repeat;
+    }
+
+    @include breakpoint-up(medium) {
+      width: 52%;
+      margin: 0;
+    }
+  }
+
+  .testimonial-wrapper {
+    padding: 1.9em;
+  }
+
+  .testimonial-text {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .testimonial-image {
+    width: 20%;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .testimonial-name {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .testimonial-position {
+    font-size: 9px;
+  }
+}

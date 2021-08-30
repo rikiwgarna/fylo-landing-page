@@ -1,0 +1,117 @@
+.hero {
+  text-align: center;
+  margin-bottom: 8rem;
+
+  @include breakpoint-up(medium) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .hero-img {
+    margin-bottom: 4.38rem;
+
+    @include breakpoint-up(medium) {
+      order: 2;
+    }
+  }
+
+  .hero-article {
+    @include breakpoint-up(medium) {
+      order: 1;
+      text-align: left;
+    }
+  }
+  .hero-title {
+    font-size: 1.6rem;
+    margin-bottom: 2.88rem;
+
+    @include breakpoint-up(medium) {
+      padding-right: 2em;
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .hero-text {
+    padding: 0 1em;
+    margin-bottom: 3rem;
+
+    @include breakpoint-up(medium) {
+      padding-left: 0;
+      padding-right: 6em;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .hero-cta {
+    @include breakpoint-up(medium) {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-right: 10rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity 100ms linear;
+    }
+  }
+
+  .form-control {
+    width: 100%;
+  }
+  .email-input,
+  .hero-btn-cta {
+    width: 100%;
+    padding: 0.6rem 1.5rem;
+    border-radius: 2px;
+    border: 1px solid $veryDarkBlue;
+  }
+
+  .email-input {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  .notification {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-left: 0.5em;
+    visibility: hidden;
+  }
+
+  .hero-btn-cta {
+    cursor: pointer;
+    background-color: $brightBlue;
+    border: none;
+    outline: none;
+    color: $lightGrayishBlue;
+
+    @include breakpoint-up(medium) {
+      padding: 0.7rem 1.5em;
+      width: 50%;
+      font-size: 14px;
+      align-self: flex-start;
+    }
+  }
+
+  .error {
+    .email-input {
+      border: 1px solid #ff0033;
+    }
+
+    .notification {
+      color: #ff0033;
+      font-style: italic;
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="">
+      <header class="header container">
+        <img src="./images/logo.svg" alt="Flyo Logo" class="logo" />
+
+        <nav class="navigation-header">
+          <ul>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Features</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Team</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero section -->
+      <section class="hero container">
+        <figure class="hero-img">
+          <img src="./images/illustration-1.svg" alt="Hero Illustration" />
+        </figure>
+
+        <article class="hero-article">
+          <h1 class="hero-title">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="hero-text">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form class="hero-cta">
+            <div class="form-control">
+              <input
+                type="email"
+                name="email"
+                class="email-input error"
+                placeholder="Enter your email"
+              />
+              <small class="notification">Error Message</small>
+            </div>
+  
+            <button class="hero-btn-cta" type="submit" id="btn">Get Started</button>
+          </form>
+        </article>
+
+      </section>
+      <!-- End of Hero section -->
+
+      <!-- Team section -->
+      <section class="team">
+        <div class="container">
+          <figure class="team-image">
+            <img src="./images/illustration-2.svg" alt="Team Illustration" />
+          </figure>
+
+          <article class="team-article">
+            <h2 class="team-title">Stay productive, wherever you are</h2>
+            <p class="team-text">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="team-text">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+
+            <a href="" class="link-btn"
+              >See how Fylo works <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <p class="testimonial-text">
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+
+                <div class="testimonial-profile">
+                  <figure class="testimonial-image">
+                    <img src="./images/avatar-testimonial.jpg" alt="Avatar" />
+                  </figure>
+
+                  <div class="testimonial-info">
+                    <p class="testimonial-name">Kyle Burton</p>
+                    <p class="testimonial-position">Founder & CEO, Huddle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- End of Team section -->
+
+      <!-- CTA section -->
+      <section class="cta">
+        <div class="container">
+          <article class="cta-article">
+            <h2 class="cta-title">Get early access today</h2>
+
+            <p class="cta-text">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </article>
+
+          <form class="cta-form">
+            <div class="form-control">
+              <input
+                type="email"
+                name="email"
+                class="email-input-cta"
+                placeholder="email@example.com"
+              />
+              <small class="notification">Error Message</small>
+            </div>
+
+            <button class="btn-cta" type="submit">Get Started For Free</button>
+          </form>
+        </div>
+      </section>
+      <!-- End of CTA section -->
+
+      <!-- Footer section -->
+      <footer class="footer">
+        <div class="container">
+          <figure class="footer-image">
+            <img src="./images/logo-footer.svg" alt="Flyo Logo" />
+          </figure>
+
+          <div class="footer-navigation">
+            <ul class="info-contact">
+              <li><i class="fas fa-phone-alt"> <p>Phone: +1-543-123-4567</p> </i></li>
+              <li><i class="fas fa-envelope"> <p>example@fylo.com</p>  </i></li>
+            </ul>
+
+            <ul class="footer-links"
+              <li><a href="#" class="navigation-link">About Us</a></li>
+              <li><a href="#" class="navigation-link">Jobs</a></li>
+              <li><a href="#" class="navigation-link">Press</a></li>
+              <li><a href="#" class="navigation-link">Blog</a></li>
+            </ul>
+
+            <ul class="footer-links">
+              <li><a href="#" class="navigation-link">Contact Us</a></li>
+              <li><a href="#" class="navigation-link">Terms</a></li>
+              <li><a href="#" class="navigation-link">Privacy</a></li>
+            </ul>
+
+            <ul class="social-icons">
+              <li>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer section -->
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/rikiwgarna/fylo-landing-page">Riki Garna</a>.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
